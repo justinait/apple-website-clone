@@ -64,6 +64,7 @@ gsap.to("#page-bottom", {
   opacity:0
 });
 
+
 var tl = gsap.timeline({
   scrollTrigger: {
     trigger: `#page1`,
@@ -93,6 +94,7 @@ var tl = gsap.timeline({
 tl.to("#page2>h1", {
   top: `-50%`
 })
+
 var tl = gsap.timeline({
   scrollTrigger: {
     trigger: `#page3`,
@@ -105,6 +107,21 @@ var tl = gsap.timeline({
 })
 
 tl.to("#page3>h1", {
+  top: `-50%`
+})
+
+var tl = gsap.timeline({
+  scrollTrigger: {
+    trigger: `#page4`,
+    start: `top top`,
+    scrub: 1,
+    scroller: `#main`,
+    markers: true,
+    pin: true
+  }
+})
+
+tl.to("#page4>h1", {
   top: `-50%`
 })
 

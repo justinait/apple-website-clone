@@ -77,7 +77,8 @@ html, body {
 }
 #page1>h1, 
 #page2>h1,
-#page3>h1 {
+#page3>h1,
+#page4>h1 {
     font-size: 3vw;
     color: #fff;
     font-weight: 700;
@@ -87,14 +88,17 @@ html, body {
     transform: translateX(-50%);
     white-space: nowrap;
 }
-#page2, #page3 {
+#page2, #page3, #page4 {
     position: relative;
     height: 100vh;
     width: 100%;
     background-color: #fff;
 }
-#page2>video, #page3>video {
+#page2>video, #page3>video, #page4>video {
     height: 100%;
     width: 100%;
     object-fit: cover;
+}
+.gsap-marker-scroller-start {
+    display: none !important;
 }
